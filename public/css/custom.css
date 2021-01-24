@@ -1,0 +1,8 @@
+.ligas img {
+  max-height: 150px;
+}
+
+.card.jersey {
+  min-width: 253px;
+  min-height: 381px;
+}
