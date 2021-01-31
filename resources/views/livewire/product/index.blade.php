@@ -2,7 +2,7 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-transparent pl-0">
       <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">List All Jersey</li>
+      <li class="breadcrumb-item active" aria-current="page">{{$title}}</li>
     </ol>
   </nav>
   <div class="row mb-3">
@@ -33,7 +33,7 @@
           </div>
           <div class="row mt-1">
             <div class="col-md-12">
-              <a href="" class="btn btn-block btn-dark">Detail</a>
+              <a href="{{route('product.detail', $product->id)}}" class="btn btn-block btn-dark">Detail</a>
             </div>
           </div>
         </div>

@@ -17,11 +17,11 @@ class CreateOrderDetailsTable extends Migration
             $table->bigIncrements('id');
             $table->foreignId('product_id');
             $table->foreignId('order_id');
-            $table->text('addressOrder');
+            $table->string('jumlah_pesanan');
             $table->integer('total');
             $table->boolean('nameset')->default(false);
             $table->string('name')->nullable();
-            $table->string('nomor')->nullable();
+            $table->string('number')->nullable();
             $table->timestamps();
         });
     }

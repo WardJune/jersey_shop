@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +20,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://kit.fontawesome.com/03101affa7.js" crossorigin="anonymous"></script>
-    <livewire:styles/>
-    <livewire:scripts/>
+    <livewire:styles />
+    <livewire:scripts />
 </head>
+
 <body>
     <div id="app">
         <livewire:navbar />
@@ -32,4 +35,5 @@
         @include('layouts.footer')
     </div>
 </body>
+
 </html>

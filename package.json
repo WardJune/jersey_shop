@@ -23,6 +23,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "turbolinks": "^5.2.0"
     }
 }

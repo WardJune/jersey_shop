@@ -13,4 +13,9 @@ class Product extends Model
     {
         return $this->belongsTo(Liga::class);
     }
+
+    public function orderDetails()
+    {
+        return $this->hasMany(OrderDetail::class);
+    }
 }

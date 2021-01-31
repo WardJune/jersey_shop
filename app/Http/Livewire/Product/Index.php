@@ -15,6 +15,9 @@ class Index extends Component
 
     public function updatingKeyword()
     {
+        /*
+        Apabila pencarian dihalaman berbeda maka hasil akan tetap dicari dari semua halaman, tidak mencari hanya di satu halaman saja
+        */
         return $this->resetPage();
     }
 

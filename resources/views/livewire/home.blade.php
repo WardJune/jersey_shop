@@ -1,7 +1,7 @@
 <div class="container bg-white">
-  <img src="{{ url('assets/slider/slider1.png') }}" alt="" class="img-fluid">
+  <img src="{{ url('assets/slider/slider1.png') }}" alt="" class="img-fluid animate__animated animate__fadeIn">
 
-  <section class="ligas mt-4">
+  <section class="ligas mt-4 animate__animated animate__fadeIn">
     <h2 class="mb-3"><strong>Pilih Liga</strong></h2>
     <div class="row">
       @foreach($ligas as $liga)
@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section class="Best Products mt-4">
+  <section class="Best Products mt-4 animate__animated animate__fadeIn">
     <div class="d-flex justify-content-between align-items-center">
       <h2 class="mb-3"><strong>Best Products</strong></h2>
       <a class="btn btn-dark" href="{{route('product.index')}}">See all</a>
@@ -37,7 +37,7 @@
             </div>
             <div class="row mt-1">
               <div class="col-md-12">
-                <a href="" class="btn btn-block btn-dark">Detail</a>
+                <a href="{{route('product.detail', $product->id)}}" class="btn btn-block btn-dark">Detail</a>
               </div>
             </div>
           </div>
