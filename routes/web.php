@@ -15,3 +15,4 @@ Route::livewire('/', 'home')->name('home');
 Route::livewire('/product', 'product.index')->name('product.index');
 Route::livewire('/product/liga/{slug}', 'product.liga')->name('product.liga');
 Route::livewire('/product/{id}', 'product.detail')->name('product.detail');
+Route::livewire('/cart', 'cart')->name('cart.index')->middleware('auth');

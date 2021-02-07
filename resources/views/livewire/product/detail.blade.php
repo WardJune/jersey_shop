@@ -97,7 +97,7 @@
                 </td>
               </tr>
               <tr>
-                <td colspan="3"><button @if ($product->is_ready == 0)
+                <td colspan="3"><button @if ($product->is_ready == 0 || $value == 0)
                     disabled
                     @endif class="btn btn-dark btn-block"><span class="fas fa-shopping-cart"></span> Add to
                     Chart</button>

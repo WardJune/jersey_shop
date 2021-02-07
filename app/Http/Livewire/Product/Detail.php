@@ -84,7 +84,7 @@ class Detail extends Component
             'number' => $this->number_set,
             'nameset' => $this->name_set ? true : false,
         ]);
-
+        $this->emit('updateKeranjang');
         session()->flash('success', 'Berhasil dimasukan ke Keranjang');
 
         return redirect()->back();

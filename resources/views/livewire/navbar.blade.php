@@ -32,6 +32,12 @@
         <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto">
           <!-- Authentication Links -->
+          @auth
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('cart.index')}}"><span class="fas fa-shopping-cart"></span> <span
+                class="badge badge-warning">{{$cart}}</span></a>
+          </li>
+          @endauth
           @guest
           <li class="nav-item">
             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
